@@ -2,7 +2,7 @@ import React from 'react';
 import ListActionItem from '../../components/ListActionItem';
 import ListTitleItem from '../../components/ListTitleItem';
 
-function Clients() {
+function ClientsList() {
     return (
         <section>
             <h1>Teste</h1>
@@ -21,4 +21,4 @@ function Clients() {
     );
 }
 
-export default Clients;
+export default ClientsList;

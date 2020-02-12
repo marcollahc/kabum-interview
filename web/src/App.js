@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, withRouter } from "react-router-dom";
 
 import Header from './components/Header';
 import MenuItem from './components/MenuItem';
 
+import Login from './pages/Login';
 import ClientsList from './pages/ClientsList';
 
 import './App.css';
@@ -14,13 +15,9 @@ function App() {
       <Header>
         <MenuItem href="/clients/list" title="Lista cliente" />
         <MenuItem href="/clients/new" title="Novo cliente" />
-        <MenuItem href="/exit" title="Sair" />
+        <MenuItem href="/" title="Sair" />
       </Header>
-
       <Switch>
-        <Route path="/">
-          <ClientsList />
-        </Route>
         <Route path="/clients/list">
           <ClientsList />
         </Route>
@@ -38,6 +35,9 @@ function App() {
         </Route>
         <Route path="/addresses/edit/:client_id/:id">
           <ClientsList />
+        </Route>
+        <Route path="/">
+          <Login />
         </Route>
       </Switch>
     </Router>
