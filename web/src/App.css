@@ -1,0 +1,78 @@
+header {
+  width: 100%;
+  background: #343434;
+}
+
+header nav {
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+header nav div {
+  padding: 10px;
+}
+
+header .menu-item {
+  font-weight: 700;
+  color: #FFF;
+  text-decoration: none;
+}
+
+header .menu-item:hover {
+  color: #2DC72D;
+}
+
+section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto 0;
+}
+
+section h1 {
+  font-size: 48px;
+  color: #343E4A;
+  border-bottom: 4px solid #707070;
+}
+
+section .content-list {
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.content-list .content-list-title,
+.content-list .content-list-item  {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-list-title {
+  font-size: 16px;
+  color: #2DC72D;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.content-list-item {
+  font-size: 16px;
+}
+
+.content-list .title {
+  padding: 10px;
+  flex: 1;
+}
+
+.content-list .action {
+  padding: 10px;
+}
+
+.action-icon {
+  color: #2DC72D;
+}
+
+.action-icon:hover {
+  color: #2B9B3A;
+}
