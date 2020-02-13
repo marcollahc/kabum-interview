@@ -17,7 +17,7 @@ php -S localhost:4321 index.php
 ```
 Pronto! Neste exato momento sua API é para estar funcionando corretamente.
 
-## Exxecutando o frontend.
+## Executando o frontend.
 
 Vá até a pasta web usando o Bash, Powershell por exemplo e execute o comando abaixo:
 
