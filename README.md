@@ -21,7 +21,10 @@ Pronto! Neste exato momento sua API é para estar funcionando corretamente.
 
 Vá até a pasta web usando o Bash, Powershell por exemplo e execute o comando abaixo:
 
-npm start.
+```sh
+npm install
+npm start
+```
 
 [TODO]
 - Fazer o frontend se comunicar com a API.
