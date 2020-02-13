@@ -15,6 +15,7 @@ E por último, usando o Bash, Powershell entre outros, navegue até a backend e 
 ```sh
 php -S localhost:4321 index.php
 ```
+
 Pronto! Neste exato momento sua API é para estar funcionando corretamente.
 
 ## Executando o frontend
