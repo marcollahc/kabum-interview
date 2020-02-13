@@ -1,20 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, withRouter } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from './components/Header';
 import MenuItem from './components/MenuItem';
 
 import Login from './pages/Login';
 import ClientsList from './pages/ClientsList';
+import ClientsForm from './pages/ClientsForm';
+import AddressesList from './pages/AddressesList';
+import AddressesForm from './pages/AddressesForm';
 
 import './App.css';
 
-function App() {
+function App(props) {
   return (
     <Router>
       <Header>
         <MenuItem href="/clients/list" title="Lista cliente" />
         <MenuItem href="/clients/new" title="Novo cliente" />
+        <MenuItem href="/addresses/new" title="Novo endereço" />
         <MenuItem href="/" title="Sair" />
       </Header>
       <Switch>
@@ -22,22 +26,22 @@ function App() {
           <ClientsList />
         </Route>
         <Route path="/clients/new">
-          <ClientsList />
+          <ClientsForm action="new" />
         </Route>
-        <Route path="/clients/show">
-          <ClientsList />
+        <Route path="/clients/show/:id">
+          <ClientsForm action="show" />
         </Route>
         <Route path="/addresses/list/:client_id">
-          <ClientsList />
+          <AddressesList />
         </Route>
-        <Route path="/addresses/new/:client_id">
-          <ClientsList />
+        <Route path="/addresses/new">
+          <AddressesForm action="new" />
         </Route>
-        <Route path="/addresses/edit/:client_id/:id">
-          <ClientsList />
+        <Route path="/addresses/show/:client_id/:id">
+          <AddressesForm action="show" />
         </Route>
         <Route path="/">
-          <Login />
+          <Login header="ignore" />
         </Route>
       </Switch>
     </Router>

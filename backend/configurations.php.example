@@ -1,0 +1,11 @@
+<?php
+$database = [
+    "name" => "kabum_interview",
+    "host" => "",
+    "user" => "",
+    "password" => ""
+];
+
+$database = json_decode(json_encode($database), false);
+
+?>
