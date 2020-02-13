@@ -4,7 +4,7 @@
 - MySQL 5.6+
 - Node.js 10+
 
-## Executando a API:
+## Executando a API
 
 Vá até a pasta backend e renomeie o arquivo configurations.php.example para configurations.php. Altere o host, users e password para que o sistema tenha acesso ao banco de dados.
 
@@ -17,7 +17,7 @@ php -S localhost:4321 index.php
 ```
 Pronto! Neste exato momento sua API é para estar funcionando corretamente.
 
-## Executando o frontend.
+## Executando o frontend
 
 Vá até a pasta web usando o Bash, Powershell por exemplo e execute o comando abaixo:
 
